@@ -1,9 +1,9 @@
 // @flow
-import React, {PropTypes} from 'react';
+import React, { PropTypes } from 'react';
 import styles from '../../scss/App.css';
 
 const Navbar = () => (
-    <header className={styles.navBar}>
+  <header className={styles.navBar}>
         <nav>
             <ul className={styles.noMargin}>
                 <li>
@@ -14,8 +14,8 @@ const Navbar = () => (
     </header>
 );
 
-Navbar.displayName = 'Navbar';
-Navbar.propTypes = {};
+Navbar.displayName  = 'Navbar';
+Navbar.propTypes    = {};
 Navbar.defaultProps = {};
 
 export default Navbar;

@@ -1,6 +1,3 @@
-import App from './App';
-import HomePage from './Front/pages/HomePage';
+import { Navbar, Sidebar, GlobalStyles } from './App';
 
-export default App;
-
-export { HomePage };
+export { Navbar, Sidebar, GlobalStyles };

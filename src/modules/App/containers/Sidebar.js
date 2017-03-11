@@ -5,16 +5,16 @@ import { bindActionCreators } from 'redux';
 import styles from '../scss/App.css';
 
 class Sidebar extends Component {
-	
-	static displayName = 'Sidebar';
-	
-	static defaultProps = {};
-	
-	static propTypes = {};
-	
-	render() {
-		return (
-			<aside className={styles.sidebar}>
+
+  static displayName = 'Sidebar';
+
+  static defaultProps = {};
+
+  static propTypes = {};
+
+  render () {
+    return (
+      <aside className={styles.sidebar}>
 				<h1>Page Title</h1>
 				<ul>
 					<li>
@@ -22,19 +22,19 @@ class Sidebar extends Component {
 					</li>
 				</ul>
 			</aside>
-		);
-	}
+    );
+  }
 }
 
-function _mapStateToProps(state, ownProps) {
-	return {
-		state: state
-	};
+function _mapStateToProps (state, ownProps) {
+  return {
+    state: state
+  };
 }
-function _mapDispatchToProps(dispatch) {
-	return {
-		actions: bindActionCreators({}, dispatch)
-	};
+function _mapDispatchToProps (dispatch) {
+  return {
+    actions: bindActionCreators({}, dispatch)
+  };
 }
 
 export default connect(_mapStateToProps, _mapDispatchToProps)(Sidebar);

@@ -1,6 +1,7 @@
-const req = require.context('.', true, /\.\/[^/]+\/[^/]+\/index\.js$/);
+import Icon from './atoms/Icon';
+import Input from './atoms/Input';
+import Label from './atoms/Label';
+import TextElement from './atoms/TextElement';
+import FormField from './molecules/FormField';
 
-req.keys().forEach((key) => {
-	const componentName = key.replace(/^.+\/([^/]+)\/index\.js/, '$1');
-	module.exports[componentName] = req(key).default;
-});
+export { Icon, Input, Label, TextElement, FormField }
