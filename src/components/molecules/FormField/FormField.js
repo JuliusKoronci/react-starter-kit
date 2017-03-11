@@ -15,10 +15,7 @@ class FormField extends Component {
   };
 
   static propTypes = {
-    value            : PropTypes.oneOfType([
-                                             PropTypes.string,
-                                             PropTypes.number
-                                           ]),
+    value            : PropTypes.oneOfType([ PropTypes.string, PropTypes.number ]),
     WrappedNode      : PropTypes.func.isRequired,
     returnValue      : PropTypes.func.isRequired,
     shouldReturnValue: PropTypes.bool.isRequired,
@@ -62,14 +59,12 @@ class FormField extends Component {
 
   _handleChange = (e: InputEvent) => {
     const value = e.target.value;
-    this.setState({
-                    localValue: value,
-                  });
+
+    this.setState({ localValue: value });
 
     if (this.props.validate && this.props.validateOnChange) {
       this.props.validate(this.state.localValue);
     }
-
     if (this.props.shouldReturnValue) {
       this.props.returnValue(this.state.localValue);
     }

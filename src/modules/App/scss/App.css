@@ -1,31 +1,31 @@
 body, html {
-  margin  : 0;
-  padding : 0;
-  height  : 100%; }
+  margin: 0;
+  padding: 0;
+  height: 100%; }
 
 .noPadding {
-  padding : 0; }
+  padding: 0; }
 
 .noMargin {
-  margin : 0; }
+  margin: 0; }
 
 .flexDisplay {
-  display : flex;
-  height  : 100%; }
+  display: flex;
+  height: 100%; }
 
 .pageContent {
-  composes : noPadding;
-  composes : noMargin;
-  height   : 100%; }
+  composes: noPadding;
+  composes: noMargin;
+  height: 100%; }
 
 .navBar {
-  overflow   : hidden;
-  background : #e2e2e2; }
+  overflow: hidden;
+  background: #e2e2e2; }
 
 .sidebar {
-  width      : 200px;
-  background : #c2c2c2; }
+  width: 200px;
+  background: #c2c2c2; }
 
 .mainContent {
-  flex       : 1;
-  background : #d2d2d2; }
+  flex: 1;
+  background: #d2d2d2; }
