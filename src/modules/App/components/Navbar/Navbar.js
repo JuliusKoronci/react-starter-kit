@@ -1,17 +1,17 @@
 // @flow
 import React, { PropTypes } from 'react';
-import styles from '../../scss/App.css';
+import { Logo } from '../../../../components';
+import LogoImage from '../../images/logo-small.png';
+import styles from '../../scss/navbar.css';
 
 const Navbar = () => (
   <header className={styles.navBar}>
-        <nav>
-            <ul className={styles.noMargin}>
-                <li>
-                    <a href="#">Nav 1 link</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+      <Logo className={styles.logo} image={LogoImage} text="WIXI" showText />
+      <nav className={styles.mainNavigation}>
+          <a className={styles.navigationButton}>Login</a>
+          <a className={styles.navigationButton}>Register</a>
+      </nav>
+  </header>
 );
 
 Navbar.displayName  = 'Navbar';

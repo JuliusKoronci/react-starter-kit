@@ -1,3 +1,3 @@
-import { Navbar, Sidebar, GlobalStyles } from './App';
+import { Navbar, Sidebar } from './App';
 
-export { Navbar, Sidebar, GlobalStyles };
+export { Navbar, Sidebar };

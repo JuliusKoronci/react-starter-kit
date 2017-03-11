@@ -1,0 +1,36 @@
+$height : 60px;
+
+.navBar {
+  overflow   : hidden;
+  background : #e2e2e2;
+  height     : $height;
+  display    : flex;
+}
+
+.mainNavigation {
+  display     : flex;
+  align-items : center;
+  text-align  : right;
+  height      : 100%;
+  margin-left : auto;
+}
+
+.navigationButton {
+  padding         : 10px 20px;
+  text-decoration : none;
+}
+
+.logo {
+  display     : flex;
+  align-items : center;
+  height      : 100%;
+  img {
+    max-height : 100%;
+    width      : auto;
+    padding    : 10px;
+    height     : $height - 20px;
+  }
+}
+
+
+

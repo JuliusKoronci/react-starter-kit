@@ -2,7 +2,7 @@
 import React, { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import styles from '../scss/App.css';
+import styles from '../scss/sidebar.css';
 
 class Sidebar extends Component {
 
@@ -26,7 +26,7 @@ class Sidebar extends Component {
   }
 }
 
-function _mapStateToProps (state, ownProps) {
+function _mapStateToProps (state) {
   return {
     state: state
   };

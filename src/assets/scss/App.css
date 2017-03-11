@@ -18,14 +18,6 @@ body, html {
   composes: noMargin;
   height: 100%; }
 
-.navBar {
-  overflow: hidden;
-  background: #e2e2e2; }
-
-.sidebar {
-  width: 200px;
-  background: #c2c2c2; }
-
 .mainContent {
   flex: 1;
   background: #d2d2d2; }

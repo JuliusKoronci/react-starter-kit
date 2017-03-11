@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
-import { Navbar, GlobalStyles } from '../modules';
+import { Navbar } from '../modules';
+import GlobalStyles from '../assets';
 
 const Layout = ({ children }) => (
   <div id="pageContent" className={GlobalStyles.pageContent}>
