@@ -1,0 +1,27 @@
+.navBar {
+  overflow: hidden;
+  background: #e2e2e2;
+  height: 60px;
+  display: flex; }
+
+.mainNavigation {
+  display: flex;
+  align-items: center;
+  text-align: right;
+  height: 100%;
+  margin-left: auto; }
+
+.navigationButton {
+  padding: 10px 20px;
+  text-decoration: none; }
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 100%; }
+
+.logo img {
+  max-height: 100%;
+  width: auto;
+  padding: 10px;
+  height: 40px; }
