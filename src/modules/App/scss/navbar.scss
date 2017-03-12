@@ -1,7 +1,7 @@
 $height : 60px;
 
 .navBar {
-  overflow   : hidden;
+  overflow   : visible;
   background : #e2e2e2;
   height     : $height;
   display    : flex;
@@ -29,6 +29,30 @@ $height : 60px;
     width      : auto;
     padding    : 10px;
     height     : $height - 20px;
+  }
+}
+
+.dropdown {
+  position : relative;
+}
+
+.dropdownContent {
+  position   : absolute;
+  z-index    : 2;
+  background : #a2a2a2;
+  right      : 0;
+  top        : 30px;
+  width      : auto;
+  a {
+    display     : block;
+    text-align  : left;
+    white-space : nowrap;
+  }
+
+  i {
+    width        : 22px;
+    margin-right : 5px;
+    text-align   : center;
   }
 }
 

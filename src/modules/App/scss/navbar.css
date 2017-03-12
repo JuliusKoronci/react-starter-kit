@@ -1,5 +1,5 @@
 .navBar {
-  overflow: hidden;
+  overflow: visible;
   background: #e2e2e2;
   height: 60px;
   display: flex; }
@@ -25,3 +25,24 @@
   width: auto;
   padding: 10px;
   height: 40px; }
+
+.dropdown {
+  position: relative; }
+
+.dropdownContent {
+  position: absolute;
+  z-index: 2;
+  background: #a2a2a2;
+  right: 0;
+  top: 30px;
+  width: auto; }
+
+.dropdownContent a {
+  display: block;
+  text-align: left;
+  white-space: nowrap; }
+
+.dropdownContent i {
+  width: 22px;
+  margin-right: 5px;
+  text-align: center; }
