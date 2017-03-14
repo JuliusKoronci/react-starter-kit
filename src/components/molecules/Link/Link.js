@@ -9,8 +9,8 @@ class Link extends Component {
   };
   static propTypes    = {
     children: PropTypes.node.isRequired,
-    iconName: PropTypes.oneOfType(PropTypes.bool, PropTypes.string),
-    path    : PropTypes.oneOfType(PropTypes.bool, PropTypes.string),
+    iconName: PropTypes.oneOfType([ PropTypes.bool, PropTypes.string ]),
+    path    : PropTypes.oneOfType([ PropTypes.bool, PropTypes.string ]),
   };
 
   state = {};

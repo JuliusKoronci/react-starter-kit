@@ -15,8 +15,8 @@ class DropDown extends Component {
     showOnHover: PropTypes.bool,
     hideOnLeave: PropTypes.bool,
     hide       : PropTypes.bool,
-    toggleName : PropTypes.oneOfType(PropTypes.bool, PropTypes.string),
-    iconName   : PropTypes.oneOfType(PropTypes.bool, PropTypes.string),
+    toggleName : PropTypes.oneOfType([ PropTypes.bool, PropTypes.string ]),
+    iconName   : PropTypes.oneOfType([ PropTypes.bool, PropTypes.string ]),
   };
 
   constructor (props, context) {
@@ -67,6 +67,7 @@ class DropDown extends Component {
   render () {
     const { toggleName, iconName, children, ...others } = this.props;
     delete others.showOnHover;
+    delete others.hideOnLeave;
     delete others.hide;
     return (
       <div onMouseLeave={this._onMouseLeave} {...others}>

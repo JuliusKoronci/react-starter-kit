@@ -1,0 +1,20 @@
+import { CALL_API } from 'redux-api-middleware';
+import LoginConstants from '../constants/LoginConstants';
+export function login (username = '', password = '') {
+  return {
+    [CALL_API]: {
+      endpoint: 'http://login.dev',
+      method  : 'POST',
+      body    : JSON.stringify(
+        {
+          username,
+          password,
+        }),
+      types   : [
+        LoginConstants.LOGIN_REQUEST,
+        LoginConstants.LOGIN_SUCCESS,
+        LoginConstants.LOGIN_ERROR,
+      ]
+    }
+  }
+}

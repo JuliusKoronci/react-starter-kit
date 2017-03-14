@@ -19,12 +19,11 @@
   display: flex;
   align-items: center;
   height: 100%; }
-
-.logo img {
-  max-height: 100%;
-  width: auto;
-  padding: 10px;
-  height: 40px; }
+  .logo img {
+    max-height: 100%;
+    width: auto;
+    padding: 10px;
+    height: 40px; }
 
 .dropdown {
   position: relative; }
@@ -36,13 +35,11 @@
   right: 0;
   top: 30px;
   width: auto; }
-
-.dropdownContent a {
-  display: block;
-  text-align: left;
-  white-space: nowrap; }
-
-.dropdownContent i {
-  width: 22px;
-  margin-right: 5px;
-  text-align: center; }
+  .dropdownContent a {
+    display: block;
+    text-align: left;
+    white-space: nowrap; }
+  .dropdownContent i {
+    width: 22px;
+    margin-right: 5px;
+    text-align: center; }

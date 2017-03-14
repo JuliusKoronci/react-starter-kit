@@ -1,12 +1,12 @@
 // @flow
 import React from 'react';
 
-import { Input, FormField } from '../../components';
+import { Login } from '../../modules';
 
 const HomePage = () => (
   <div>
     Should just lay out components;
-    <FormField WrappedNode={Input} placeholder="Test" returnValue={(val)=>console.log(val)} shouldReturnValue={true} />
+    <Login/>
   </div>
 );
 

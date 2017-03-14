@@ -34,9 +34,9 @@ class FormField extends Component {
   componentWillReceiveProps (nextProps) {
     if (this.props.shouldReturnValue !== nextProps.shouldReturnValue) {
       if (this.props.validate) {
-        this.nextProps.validate(this.state.localValue);
+        this.props.validate(this.state.localValue);
       }
-      this.nextProps.returnValue(this.state.localValue);
+      this.props.returnValue(this.state.localValue);
     }
   }
 
@@ -59,7 +59,6 @@ class FormField extends Component {
 
   _handleChange = (e: InputEvent) => {
     const value = e.target.value;
-
     this.setState({ localValue: value });
 
     if (this.props.validate && this.props.validateOnChange) {
@@ -74,6 +73,7 @@ class FormField extends Component {
     if (this.props.validate && this.props.validateOnBlur) {
       this.props.validate(this.state.localValue);
     }
+    this.props.returnValue(this.state.localValue);
   };
 
   _getWrappedNode = () => {

@@ -1,3 +1,3 @@
 import { Navbar, Sidebar } from './App';
-
-export { Navbar, Sidebar };
+import Login, { LoginReducer } from './Login';
+export { Navbar, Sidebar, Login, LoginReducer };
