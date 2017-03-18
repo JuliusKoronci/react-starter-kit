@@ -9,43 +9,49 @@ const _success = {
     return updeep(
       {
         isFetching: false,
-        error     : false,
+        error: false,
         token,
         user,
       }, state);
   },
 };
-const _error   = {
-  next(state) {
+
+const _failure = {
+  throw (state, action) {
+    const { response } = action.payload;
     return updeep(
       {
         isFetching: false,
-        error     : true,
+        error: true,
+        errorResponse: response,
       }, state);
-  },
+  }
 };
+
 const _request = {
   next(state) {
     return updeep(
       {
         isFetching: true,
-        error     : false,
+        error: false,
       }, state);
   },
 };
 
 const loginReducer = {
   [loginActions.LOGIN_REQUEST]: _request,
+  [loginActions.LOGIN_ERROR]: _failure,
   [loginActions.LOGIN_SUCCESS]: _success,
-  [loginActions.LOGIN_ERROR]  : _error,
 };
+
 
 export default handleActions(
   loginReducer,
   {
     isFetching: false,
-    error     : false,
-    token     : '',
-    user      : {},
+    error: false,
+    token: '',
+    errorResponse: {},
+    user: {},
   }
 );
